@@ -1,0 +1,91 @@
+# Extra: work and project tooling. Optional — install when needed.
+# Install with: brew bundle --file=Brewfile.extra
+# (Packages already in Brewfile are left out.)
+
+tap "azure/functions"
+tap "azure/kubelogin", "https://github.com/Azure/homebrew-kubelogin"
+tap "pantsbuild/tap"
+# Microsoft Azure CLI 2.0
+brew "azure-cli"
+# Cross-platform make
+brew "cmake"
+# Dependency manager for Cocoa projects
+brew "cocoapods"
+# Container runtimes on MacOS (and Linux) with minimal setup
+brew "colima"
+# Pack, ship and run any application as a lightweight container
+brew "docker"
+# Isolated development environments using Docker
+brew "docker-compose"
+# Graph visualization software from AT&T and Bell Labs
+brew "graphviz"
+# Handy way to save and run project-specific commands
+brew "just"
+# Kubernetes command-line interface
+brew "kubernetes-cli"
+# Development kit for the Java programming language
+brew "openjdk@21"
+# Fast, disk space efficient package manager
+brew "pnpm"
+# PDF rendering library (based on the xpdf-3.0 code base)
+brew "poppler"
+# Object-relational database system
+brew "postgresql@15", restart_service: :changed
+# Object-relational database system
+brew "postgresql@17"
+# Framework for managing multi-language pre-commit hooks
+brew "pre-commit"
+# SOcket CAT: netcat on steroids
+brew "socat"
+# Easiest, most secure way to use WireGuard and 2FA
+brew "tailscale", restart_service: :changed
+# Terminal multiplexer
+brew "tmux"
+# Watch files and take action when they change
+brew "watchman"
+# Pluggable terminal workspace, with terminal multiplexer as the base feature
+brew "zellij"
+# Programming language designed for robustness, optimality, and clarity
+brew "zig@0.15", link: true
+# A Kubernetes credential (exec) plugin implementing azure authentication
+brew "azure/kubelogin/kubelogin", trusted: true
+# UI toolkit for building applications for mobile, web and desktop
+cask "flutter"
+# Code editor (needed for the vscode extensions below)
+cask "visual-studio-code"
+# Clipboard manager
+cask "maccy"
+# Fast, scalable, user-friendly build system for codebases of all sizes
+cask "pantsbuild/tap/pants", trusted: true
+vscode "dart-code.dart-code"
+vscode "dart-code.flutter"
+vscode "diemasmichiels.emulate"
+vscode "durablefunctionsmonitor.durablefunctionsmonitor"
+vscode "github.vscode-github-actions"
+vscode "google.gemini-cli-vscode-ide-companion"
+vscode "google.geminicodeassist"
+vscode "googlecloudtools.cloudcode"
+vscode "mechatroner.rainbow-csv"
+vscode "meta.pyrefly"
+vscode "ms-azuretools.vscode-azure-github-copilot"
+vscode "ms-azuretools.vscode-azure-mcp-server"
+vscode "ms-azuretools.vscode-azurefunctions"
+vscode "ms-azuretools.vscode-azureresourcegroups"
+vscode "ms-azuretools.vscode-azurestorage"
+vscode "ms-azuretools.vscode-containers"
+vscode "ms-python.debugpy"
+vscode "ms-python.python"
+vscode "ms-python.vscode-pylance"
+vscode "ms-python.vscode-python-envs"
+vscode "ms-toolsai.datawrangler"
+vscode "ms-toolsai.jupyter"
+vscode "ms-toolsai.jupyter-keymap"
+vscode "ms-toolsai.jupyter-renderers"
+vscode "ms-toolsai.vscode-jupyter-cell-tags"
+vscode "ms-toolsai.vscode-jupyter-slideshow"
+vscode "ms-vscode-remote.remote-containers"
+vscode "ms-vscode.makefile-tools"
+vscode "waderyan.gitblame"
+uv "pre-commit"
+npm "azurite"
+npm "corepack"
