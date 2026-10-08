@@ -93,4 +93,5 @@ alias gpr='git pull --rebase'
 # Worktrunk
 # =============================================================================
 
+alias wts='wt switch'
 alias wtl='wt list'
